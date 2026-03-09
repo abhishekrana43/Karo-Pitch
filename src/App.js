@@ -13,9 +13,6 @@ const COLORS = {
   border: "#2A2A3A",
 };
 
-const styles = {
-  "@import": "url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap')",
-};
 
 function useInView(threshold = 0.1) {
   const ref = useRef(null);
@@ -24,26 +21,10 @@ function useInView(threshold = 0.1) {
     const obs = new IntersectionObserver(([e]) => { if (e.isIntersecting) setVisible(true); }, { threshold });
     if (ref.current) obs.observe(ref.current);
     return () => obs.disconnect();
-  }, []);
+  }, [threshold]);
   return [ref, visible];
 }
 
-function AnimatedCounter({ target, suffix = "" }) {
-  const [count, setCount] = useState(0);
-  const [ref, visible] = useInView();
-  useEffect(() => {
-    if (!visible) return;
-    let start = 0;
-    const step = target / 60;
-    const timer = setInterval(() => {
-      start += step;
-      if (start >= target) { setCount(target); clearInterval(timer); }
-      else setCount(Math.floor(start));
-    }, 16);
-    return () => clearInterval(timer);
-  }, [visible, target]);
-  return <span ref={ref}>{count.toLocaleString()}{suffix}</span>;
-}
 
 const startups = [
   { name: "NourishKart", cat: "D2C Brand", city: "Jaipur", raise: "₹50L", desc: "Organic snack brand delivering rural superfoods to urban India.", color: "#FF5C00" },
@@ -78,7 +59,6 @@ const categories = [
 ];
 
 export default function KaroPitch() {
-  const [menuOpen, setMenuOpen] = useState(false);
   const [activeStep, setActiveStep] = useState(0);
   const [activeNav, setActiveNav] = useState("");
   const [heroRef, heroVisible] = useInView(0.05);
@@ -193,7 +173,7 @@ export default function KaroPitch() {
             {[["5000+", "Startup Stories"], ["200+", "Investors", true], ["50+", "Cities Covered"], ["₹10Cr+", "Funding Facilitated"]].map(([num, label, isTarget]) => (
               <div key={label} style={{ textAlign: "center" }}>
                 <div className="syne" style={{ fontSize: "clamp(22px,3vw,36px)", fontWeight: 800, color: isTarget ? COLORS.gold : COLORS.accent }}>
-                  {num}
+                {num}
                 </div>
                 <div style={{ color: COLORS.muted, fontSize: 13, marginTop: 4 }}>{label}</div>
               </div>
