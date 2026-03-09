@@ -2,6 +2,13 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+Karo Pitch – Startup Pitch Platform 🚀
+
+A modern ReactJS landing page designed for Karo Pitch, a platform that allows early-stage founders from across India to pitch their startups directly to investors and gain visibility, mentorship, and funding opportunities.
+
+This project demonstrates a clean startup-style homepage built with React to present the vision and workflow of the Karo Pitch platform.
+
 ## Available Scripts
 
 In the project directory, you can run:
