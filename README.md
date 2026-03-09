@@ -9,69 +9,115 @@ A modern ReactJS landing page designed for Karo Pitch, a platform that allows ea
 
 This project demonstrates a clean startup-style homepage built with React to present the vision and workflow of the Karo Pitch platform.
 
-## Available Scripts
+🎯 Features
 
-In the project directory, you can run:
+The homepage includes the following sections:
 
-### `npm start`
+1️⃣ Hero Section
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+.Main headline introducing Karo Pitch
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+.Short description of the platform
 
-### `npm test`
+.Action buttons
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+.Apply to Pitch
 
-### `npm run build`
+.Explore Startups
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2️⃣ About Karo Pitch
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Explains:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+What the Karo Pitch platform is
 
-### `npm run eject`
+Why it was created
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Its mission to empower entrepreneurs across India
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3️⃣ How It Works
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1.A simple 4-step startup pitching process:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2.Apply with your pitch deck
 
-## Learn More
+3.Get shortlisted by KaroStartup
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4.Pitch your startup to investors
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4️⃣ Who Can Apply
+.Startups from multiple categories can participate:
 
-### Code Splitting
+.D2C Brands
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+.Consumer Startups
 
-### Analyzing the Bundle Size
+.MSMEs
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+.SaaS Startups
 
-### Making a Progressive Web App
+.Manufacturing Businesses
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+.Bharat-focused Startups
 
-### Advanced Configuration
+Raise funding and grow your business
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+5️⃣ Investors Section
 
-### Deployment
+.A section highlighting that investors and mentors participate in the pitching process.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+6️⃣ Featured Startups
 
-### `npm run build` fails to minify
+.Example startup cards including:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+.Startup Name
+
+.Category
+
+.Short Description
+
+.This section demonstrates how startup profiles can be displayed on the platform.
+
+7️⃣ Final Call To Action
+
+.Encourages founders and partners to join the platform.
+
+.Buttons:
+
+.Apply Now
+
+.Partner With Us
+
+🛠 Technologies Used
+
+.ReactJS
+
+.HTML5
+
+.CSS3
+
+.JavaScript
+
+.React Components
+
+📂 Project Structure
+karo-pitch
+│
+├── public
+│   └── index.html
+│
+├── src
+│   ├── components
+│   │   ├── Hero.js
+│   │   ├── About.js
+│   │   ├── HowItWorks.js
+│   │   ├── Investors.js
+│   │   ├── Startups.js
+│   │   └── CTA.js
+│   │
+│   ├── App.js
+│   ├── App.css
+│   └── index.js
+│
+├── package.json
+└── README.md
